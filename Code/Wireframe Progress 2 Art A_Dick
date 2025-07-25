@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Year 11 Art Gallery</title>
+  <link rel="stylesheet" href="Wireframe Progress 2 Art A_Dick.css" />
+</head>
+<body>
+
+  <header>
+    <a class="logo">Art Year 11</a>
+  
+  <input id="nav" type="checkbox">
+  <label for="nav"></label>
+  
+  <nav>
+    <ul>
+      <li><a href="#"><strong>Course Outline</strong></a></li>
+      <li><a href="#"><strong>Displays</strong></a></li>
+    </ul>
+  </nav> 
+  </header>
+
+  <main>
+    <section class ="Outline">
+        <h2>Course Outline</h2>
+        <div class="photo">
+           <h3>Term 1</h3>
+           <p> About...</p>
+        </div>        
+
+        <div class="photo">
+            <h3>Term 2</h3>
+            <p> About...</p>
+         </div>    
+
+         <div class="photo">
+            <h3>Term 3</h3>
+            <p> About...</p>
+         </div>    
+
+    </section>
+
+    <section class="gallery_grid">
+      <h2>Displays</h2>
+      <div class="gallery_section">
+
+        <div class="photo">
+          <img src="" alt=""/>
+          <div class="card">
+            <h3>Name</h3>
+            <p><strong></strong></p>
+            <p>About Project or Purpose of Design</p>
+          </div>
+        </div>
+       
+        <div class="photo">
+          <img src="" alt=""/>
+          <div class="card">
+            <h3>Name</h3>
+            <p><strong></strong></p>
+            <p>About Project or Purpose of Design</p>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

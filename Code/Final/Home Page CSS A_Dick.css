@@ -1,0 +1,188 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #99C1E3 ;
+  overflow: hidden;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+header a.logo {
+  color: #F2F2F2;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.navbar {
+  margin-left: auto;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: #F2F2F2;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+  
+}
+
+.navbar ul li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+  
+.homepage {
+  height: 0vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.homepage h1 {
+  font-size: 4rem;
+  color: #333;
+  position: relative;
+  top: 250px;
+}
+
+footer {
+  background-color: #99C1E3 ;
+  overflow: hidden;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  position: relative;
+  bottom: -145px;
+  color: white;
+}
+
+
+.img_1 {
+  height: 300px;
+}
+.img_2 {
+  height: 150px;
+  position: relative;
+  top: -150px
+}
+.img_3{
+  height: 200px;
+  position: relative;
+  top: -100px
+}
+.img_4 {
+  height: 150px;
+  position: relative;
+  top: -150px
+}
+.img_5 {
+  height: 200px;
+  position: relative; 
+  top: 5px;
+}
+.img_6 {
+  height: 140px;
+  position: relative;
+  top: -205px;
+  left: 500px;
+
+  
+}
+
+.img_7 {
+  height: 200px;
+  position: relative;
+  top: -0px
+
+}
+.img_8 {
+  height: 140px;
+  position: relative;
+  top: -415px;
+  left: 195px;
+  }
+
+.img_9 {
+  height: 200px;
+  position: relative;
+  top: -200px;
+  left: 200px;
+  }
+
+.img_10 {
+  height: 150px;
+  position: relative;
+  top: -560px;
+  left: 530px;
+  
+  }
+      
+
+.img_1:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+
+.img_2:hover {
+  transform: scale(1.07);
+}
+
+.img_3:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+
+.img_4:hover {
+  transform: scale(1.1);
+}
+
+.img_5:hover {
+  transform: scale(1.1);
+}
+
+.img_6:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+
+.img_7:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+
+.img_8:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+
+.img_9:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+
+.img_10:hover {
+  transform: scale(1.05) translateY(-5px);
+}
