@@ -1,0 +1,252 @@
+/* Resets spacing and fixes box sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sets general body styling and layout */
+body {
+  font-family: sans-serif;
+  background-color: #1E3A5F;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #E6E6E6;
+}
+
+/* Headings and text colors */
+h2, h3 {
+  color: #F2F2F2;
+}
+
+p {
+  color: #E6E6E6;
+}
+
+/* Logo styling in header */
+a.logo {
+  color: #F2F2F2;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+/* Header layout and background */
+header {
+  background-color: #99C1E3;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+/* Nav bar list style */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+/* Nav items styling */
+.navbar ul li {
+  display: inline;
+}
+
+/* Nav links */
+.navbar ul li a {
+  color: #F2F2F2;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+/* Nav hover effect */
+.navbar ul li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* Footer layout */
+.footer {
+  background-color: #99C1E3;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0 2rem;
+}
+
+/* Main area padding and layout */
+main {
+  padding: 2rem;
+  flex: 1 0 auto;
+}
+
+/* Gallery grid layout (column based) */
+.gallery_grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Grid layout for artwork thumbnails */
+.gallery_section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* Gallery section heading style */
+.gallery_grid h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #F2F2F2;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #99C1E3;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Card for each photo in the gallery */
+.photo {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Makes sure images fill their containers */
+.photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Hover effect for images */
+.photo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Info card that shows on hover */
+.card {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(30, 58, 95, 0.9);
+  color: white;
+  padding: 1rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Slide-up effect for card on hover */
+.photo:hover .card {
+  transform: translateY(0);
+}
+
+/* Card title */
+.photo h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraph inside card */
+.photo p {
+  line-height: 1.5;
+}
+
+/* Layout for course outline section */
+.Outline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Styling for section titles in outline */
+.Outline h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #F2F2F2;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #99C1E3;
+  letter-spacing: 2px;
+}
+
+/* Intro box styling */
+.photo.intro {
+  background-color: #2F6FA5;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Normal course section boxes */
+.photo:not(.intro) {
+  background-color: #2F6FA5;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Term title inside each box */
+.photo h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Fullscreen center layout for homepage title */
+.homepage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Big homepage heading */
+.homepage h1 {
+  font-size: 4rem;
+  color: white;
+  margin-top: 50px;
+}
+
+/* Background image setup */
+.background_image {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url('Art 6.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: grayscale(100%);
+  animation: fadeToColor 9s ease forwards;
+}
+
+/* Animation that fades the background from grey to colour */
+@keyframes fadeToColor {
+  from {
+    filter: grayscale(100%);
+  }
+  to {
+    filter: grayscale(0%);
+  }
+}
